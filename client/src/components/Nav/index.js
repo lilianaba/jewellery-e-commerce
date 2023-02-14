@@ -19,6 +19,11 @@ function Nav() {
               Logout
             </a>
           </li>
+          <li className="mx-1">
+            <a href="/Cart" onClick={() => Auth.logout}>
+              <i className="fa-solid fa-bag-shopping"></i>
+            </a>
+          </li>
         </ul>
       );
     } else {
