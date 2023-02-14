@@ -14,7 +14,7 @@ db.once('open', async () => {
   ]);
 
   console.log('categories seeded');
-/*
+
   await Product.deleteMany();
 
   const products = await Product.insertMany([
@@ -151,7 +151,7 @@ db.once('open', async () => {
   });
 
   console.log('users seeded');
-*/
+
   process.exit();
 });
 
