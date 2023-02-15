@@ -19,11 +19,6 @@ function Nav() {
               Logout
             </a>
           </li>
-          <li className="mx-1">
-            <a href="/Cart" onClick={() => Auth.logout}>
-              <i className="fa-solid fa-bag-shopping"></i>
-            </a>
-          </li>
         </ul>
       );
     } else {
@@ -48,7 +43,7 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          Online Jewellery Store
+          My Jewellery
         </Link>
       </h1>
 

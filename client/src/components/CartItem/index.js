@@ -2,6 +2,7 @@ import React from 'react';
 import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import './style.css';
 
 const CartItem = ({ item }) => {
 
@@ -36,7 +37,7 @@ const CartItem = ({ item }) => {
   }
 
   return (
-    <div className="flex-row">
+    <div className="flex-row" id="cart-item">
       <div>
         <img
           src={`/images/${item.image}`}
@@ -44,10 +45,12 @@ const CartItem = ({ item }) => {
         />
       </div>
       <div>
-        <div>{item.name}, ${item.price}</div>
+        <div>Product: {item.name}</div>
+        <div>Unit Price: ${item.price}</div>        
         <div>
           <span>Qty:</span>
           <input
+            id="quantity"
             type="number"
             placeholder="1"
             value={item.purchaseQuantity}
@@ -58,7 +61,7 @@ const CartItem = ({ item }) => {
             aria-label="trash"
             onClick={() => removeFromCart(item)}
           >
-            🗑️
+            <i className="fas fa-trash-alt"></i>
           </span>
         </div>
       </div>

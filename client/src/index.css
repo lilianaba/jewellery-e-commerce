@@ -21,7 +21,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Brandon Grotesque Light', 'Karla', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -34,38 +34,38 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
+  font-family: 'Brandon Grotesque Light', 'Rubik', sans-serif;
   margin: 5px 0;
   line-height: 1.25;
 }
 
 h1 {
-  font-size: 2rem;
+  font-family: 'Reem Kufi Ink', sans-serif; 
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-top: 0;
 }
 
@@ -81,7 +81,7 @@ a:hover {
 }
 
 header {
-  background: var(--primary);
+  background: var(--dark);
 }
 
 header a {
@@ -89,15 +89,17 @@ header a {
 }
 
 button {
-  font-size: 1rem;
+  font-family: 'Brandon Grotesque Light', 'Karla', sans-serif;
+  font-size: 1.2rem;
   text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  padding: 0.5rem 1rem;
+  border-radius: .1rem;
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
+  margin: 1px 1px;
+  background-color: var(--dark);
+  color: var(--light); 
 }
 
 button:hover {
