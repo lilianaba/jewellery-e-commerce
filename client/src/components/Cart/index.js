@@ -46,6 +46,14 @@ const Cart = () => {
     return sum.toFixed(2);
   }
 
+  function itemTotal() {
+    let sum = 0; 
+    state.cart.forEach((item) => {
+      sum += item.purchaseQuantity; 
+    }); 
+    return sum; 
+  }
+
   function submitCheckout() {
     const productIds = [];
 
@@ -64,7 +72,7 @@ const Cart = () => {
     return (
       <div className="cart-closed" onClick={toggleCart}>
         <span role="img" aria-label="trash">
-          🛒
+          <i className="fa-solid fa-bag-shopping" id="shopping-bag"><span id="item-count">{itemTotal()}</span></i>
         </span>
       </div>
     );
@@ -73,9 +81,9 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="close" onClick={toggleCart}>
-        [close]
+        <i className="far fa-window-close" id='close-icon'></i>
       </div>
-      <h2>Shopping Cart</h2>
+      <h2>My Shopping Bag</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -83,12 +91,12 @@ const Cart = () => {
           ))}
 
           <div className="flex-row space-between">
-            <strong>Total: ${calculateTotal()}</strong>
+            <strong id="total">Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
-              <button onClick={submitCheckout}>Checkout</button>
+              <button id="checkout-btn" onClick={submitCheckout}>Checkout</button>
             ) : (
-              <span>(log in to check out)</span>
+              <span>(Please login/signup to checkout.)</span>
             )}
           </div>
         </div>
