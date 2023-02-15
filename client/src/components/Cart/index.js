@@ -101,12 +101,9 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <h3>
-          <span role="img" aria-label="shocked">
-            😱
-          </span>
-          You haven't added anything to your cart yet!
-        </h3>
+        <h5>
+          Umm... the shopping bag is empty.  Still thinking?  Just add your favourite items to your shopping bag!
+        </h5>
       )}
     </div>
   );

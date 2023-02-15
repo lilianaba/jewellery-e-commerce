@@ -21,6 +21,11 @@
   margin: 0.5rem 0.5rem;
 }
 
+.cart h5 {
+  padding-top: 1rem;
+  margin: 0.5rem 0.5rem;
+}
+
 .cart .close {
   position: absolute;
   top: .5rem;
