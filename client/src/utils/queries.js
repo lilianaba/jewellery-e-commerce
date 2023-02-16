@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const QUERY_PRODUCTS = gql`
   query getProducts($category: ID) {
@@ -20,7 +20,7 @@ export const QUERY_STRIPEKEY = gql`
   {
     stripekey
   }
-`; 
+`;
 
 export const QUERY_CHECKOUT = gql`
   query getCheckout($products: [ID]!) {
@@ -62,13 +62,18 @@ export const QUERY_USER = gql`
       orders {
         _id
         purchaseDate
-        products {
+        orderItems {
           _id
-          name
-          description
-          price
+          unit_price
           quantity
-          image
+          product {
+            _id
+            name
+            description
+            price
+            quantity
+            image
+          }
         }
       }
     }
