@@ -9,8 +9,6 @@ import { QUERY_CATEGORIES } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import { Link } from "react-router-dom";
 
-
-
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
 
@@ -47,19 +45,20 @@ function CategoryMenu() {
   return (
     <div>
       <h2>Choose a Category:</h2>
-
-      <div className="card px-1 py-1">
       {categories.map((item) => (
-      <Link to={`/category/${item._id}`}>
-        <img
-          alt={item.name}
-          src={`/images/${item.image}`}
-        />
-        <p>{item.name}</p>
-      </Link>
-     
+        <div className="card px-1 py-1">
+          <Link
+            to={`/category/${item._id}`}
+            key={item._id}
+            onClick={() => {
+              handleClick(item._id);
+            }}
+          >
+            <img alt={item.name} src={`/images/${item.image}`} />
+            <p>{item.name}</p>
+          </Link>
+        </div>
       ))}
-    </div>
     </div>
   );
 }
