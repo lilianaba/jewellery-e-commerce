@@ -15,18 +15,20 @@ function OrderHistory() {
   return (
     <>
       <div className="container my-1">
-        <Link to="/">← Back to Products</Link>
+        <Link to="/">← Back to Home</Link>
 
         {user ? (
           <>
-            <h2>
-              Order History for {user.firstName} {user.lastName}
-            </h2>
+            <div id='user-info'>
+              <h3>My Profile</h3>
+              <p>Name: {user.firstName} {user.lastName}</p>
+              <p>Email Addres: {user.email}</p>
+            </div>
+            <h4>Order History</h4>
             {user.orders.map((order) => (
-              <div key={order._id} className="my-2">
-                <h3>
-                  {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
-                </h3>
+              <div key={order._id} className="my-2" id="previous-order">
+                <p>Purchase Date: {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}</p>
+                <p>Purchased Items:</p>
                 <div className="flex-row">
                   {order.products.map(({ _id, image, name, price }, index) => (
                     <div key={index} className="card px-1 py-1">
