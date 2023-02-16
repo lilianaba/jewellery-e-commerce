@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
-
+/*
 const orderItemSchema = new mongoose.Schema({
   quantity: {
     type: Number,
@@ -17,13 +17,18 @@ const orderItemSchema = new mongoose.Schema({
     required: true,
   },
 });
-
+*/
 const orderSchema = new mongoose.Schema({
   purchaseDate: {
     type: Date,
     default: Date.now,
   },
-  orderItems: [orderItemSchema],
+  products: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Product'
+    }
+  ]
 });
 
 const Order = mongoose.model("Order", orderSchema);
