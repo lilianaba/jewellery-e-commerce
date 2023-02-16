@@ -1,5 +1,5 @@
 {
-  "name": "mern-client",
+  "name": "My Jewelry e-commerce",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001/",
@@ -9,13 +9,15 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "add": "^2.0.6",
     "graphql": "^14.6.0",
     "jwt-decode": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "4.0.2", 
-    "react-slideshow-image": "^4.2.0"
+    "react-scripts": "4.0.2",
+    "react-slideshow-image": "^4.2.0",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
