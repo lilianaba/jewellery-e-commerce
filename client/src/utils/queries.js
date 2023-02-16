@@ -9,16 +9,14 @@ export const QUERY_PRODUCTS = gql`
       price
       quantity
       image
+      material 
+      size 
+      gemstone
+      cut
       category {
         _id
       }
     }
-  }
-`;
-
-export const QUERY_STRIPEKEY = gql`
-  {
-    stripekey
   }
 `;
 
@@ -39,6 +37,10 @@ export const QUERY_ALL_PRODUCTS = gql`
       image
       price
       quantity
+      material 
+      size 
+      gemstone
+      cut
       category {
         name
       }
@@ -62,6 +64,8 @@ export const QUERY_USER = gql`
       firstName
       lastName
       email
+      address
+      phone
       orders {
         _id
         purchaseDate

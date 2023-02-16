@@ -14,13 +14,24 @@ const typeDefs = gql`
     image: String
     quantity: Int
     price: Float
+    material: String
+    size: String
+    gemstone: String
+    cut: String
     category: Category
+  }
+
+  type OrderItem {
+    _id: ID
+    quantity: Int
+    unit_price: Float
+    product: Product
   }
 
   type Order {
     _id: ID
     purchaseDate: String
-    products: [Product]
+    orderItems: [OrderItem]
   }
 
   type User {
@@ -28,6 +39,8 @@ const typeDefs = gql`
     firstName: String
     lastName: String
     email: String
+    address: String
+    phone: String
     orders: [Order]
   }
 
@@ -62,6 +75,8 @@ const typeDefs = gql`
       lastName: String
       email: String
       password: String
+      address: String 
+      phone: String
     ): User
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth

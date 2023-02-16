@@ -3,10 +3,6 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
-  productID: {
-    type: Number,
-    required: true,
-  },
   name: {
     type: String,
     required: true,
@@ -37,8 +33,8 @@ const productSchema = new Schema({
   gemstone: {
     type: String,
   },
-  imageID: {
-    type: Number,
+  cut: {
+    type: String,
   },
   category: {
     type: Schema.Types.ObjectId,

@@ -5,11 +5,6 @@ const bcrypt = require("bcryptjs");
 const Order = require("./Order");
 
 const userSchema = new Schema({
-  userId: {
-    type: Number,
-    required: true,
-    unique: true,
-  },
   firstName: {
     type: String,
     required: true,
@@ -24,7 +19,7 @@ const userSchema = new Schema({
     type: String,
   },
   phone: {
-    type: Number,
+    type: String,
   },
   email: {
     type: String,
