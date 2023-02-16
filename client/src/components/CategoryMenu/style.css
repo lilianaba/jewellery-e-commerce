@@ -1,0 +1,33 @@
+/* .categories{
+    display: flex !important;
+} */
+
+.card {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+}
+img {
+  width: 100% !important;
+  height: 90%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    display: inline-flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0 !important;
+  }
+}
