@@ -36,8 +36,6 @@ const Banner = () => {
 
   return (
     <div className="slide-container">
-      
-      <Slide {...properties}>
         <Fade {...properties}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
@@ -48,7 +46,6 @@ const Banner = () => {
           </div>
         ))}
         </Fade>
-      </Slide>
     </div>
   );
 };

@@ -27,6 +27,10 @@ db.once("open", async () => {
       category: categories[0]._id,
       price: 3000,
       quantity: 10,
+      material: 'Platinum', 
+      size: 'M', 
+      gemstone: 'Diamonds', 
+      cut: '-'
     },
     {
       name: "Bead Chain",
@@ -35,6 +39,10 @@ db.once("open", async () => {
       category: categories[0]._id,
       price: 150,
       quantity: 10,
+      material: 'Sterling Silver', 
+      size: 'M', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Morganite studs",
@@ -43,6 +51,10 @@ db.once("open", async () => {
       image: "4.jpg",
       price: 500,
       quantity: 8,
+      material: 'Rose Gold', 
+      size: '-', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Tennis Bracelet",
@@ -52,6 +64,10 @@ db.once("open", async () => {
       image: "6.jpg",
       price: 3500,
       quantity: 7,
+      material: 'White Gold', 
+      size: '-', 
+      gemstone: 'Diamonds/Sapphare', 
+      cut: '-'
     },
     {
       name: "Natural Sapphire ring",
@@ -60,6 +76,10 @@ db.once("open", async () => {
       image: "7.jpg",
       price: 722,
       quantity: 4,
+      material: 'Gold', 
+      size: 'Small', 
+      gemstone: 'Natural Sapphine', 
+      cut: '-'
     },
     {
       name: "Gold and emerald ring",
@@ -69,6 +89,10 @@ db.once("open", async () => {
       image: "8.jpg",
       price: 650,
       quantity: 10,
+      material: 'Gold', 
+      size: 'Small', 
+      gemstone: 'Created Emerald', 
+      cut: '-'
     },
     {
       name: "Snowflake",
@@ -78,6 +102,10 @@ db.once("open", async () => {
       image: "10.jpg",
       price: 1100,
       quantity: 6,
+      material: 'Gold', 
+      size: '-', 
+      gemstone: 'Diamonds', 
+      cut: '-'
     },
     {
       name: "Rose Gold and Diamond Ring",
@@ -87,6 +115,10 @@ db.once("open", async () => {
       image: "11.webp",
       price: 499,
       quantity: 18,
+      material: 'Rose Gold', 
+      size: 'M', 
+      gemstone: 'Diamonds', 
+      cut: '-'
     },
     {
       name: "White Gold 3 Carat Diamond Chain",
@@ -96,6 +128,10 @@ db.once("open", async () => {
       image: "12.webp",
       price: 4899.3,
       quantity: 7,
+      material: 'White Gold', 
+      size: '45cm', 
+      gemstone: 'Diamonds', 
+      cut: '-'
     },
     {
       name: "Silverfilled Fancy Mesh Boltring Bracelet",
@@ -105,6 +141,10 @@ db.once("open", async () => {
       image: "13.webp",
       price: 629,
       quantity: 2,
+      material: 'Gold, White Gold', 
+      size: '20cm', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Silverfilled Pendants on Chain",
@@ -114,6 +154,10 @@ db.once("open", async () => {
       image: "14.webp",
       price: 99.5,
       quantity: 27,
+      material: 'Gold', 
+      size: '45cm', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Michael Kors MK6961 Womens Watch",
@@ -123,6 +167,10 @@ db.once("open", async () => {
       image: "15.webp",
       price: 979,
       quantity: 5,
+      material: 'Gold Plated Stainless Steel', 
+      size: '42mm diameter', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Jag J2523A Gold Tone Womens Watch",
@@ -131,6 +179,10 @@ db.once("open", async () => {
       image: "16.jpeg",
       price: 111.75,
       quantity: 32,
+      material: 'Gold Plated Stainless Steel', 
+      size: '32mm diameter', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Michael Kors MK6977 Womens Watch",
@@ -139,6 +191,10 @@ db.once("open", async () => {
       image: "17.jpeg",
       price: 779,
       quantity: 1,
+      material: 'Gold Plated Stainless Steel', 
+      size: '42mm diameter', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Olivia Burton OB16CH04 Womens Watch",
@@ -147,6 +203,10 @@ db.once("open", async () => {
       image: "18.jpeg",
       price: 459,
       quantity: 5,
+      material: 'Gold Plated Stainless Steel', 
+      size: '30mm diameter', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Seiko SSC514P Solar Mens Watch",
@@ -155,6 +215,10 @@ db.once("open", async () => {
       image: "19.webp",
       price: 899,
       quantity: 10,
+      material: 'Stainless Steel', 
+      size: '41mm diameter', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Yellow Gold 1.5 Carats Diamond Stud Earrings",
@@ -163,6 +227,10 @@ db.once("open", async () => {
       image: "20.webp",
       price: 6299.3,
       quantity: 8,
+      material: 'Gold', 
+      size: '0.6g', 
+      gemstone: 'Diamonds', 
+      cut: 'Brillant Cut'
     },
     {
       name: "Yellow Gold 1.5 Carats Diamond Stud Earrings",
@@ -171,6 +239,10 @@ db.once("open", async () => {
       image: "21.jpeg",
       price: 3499.3,
       quantity: 9,
+      material: 'White Gold', 
+      size: '3.24g', 
+      gemstone: 'Diamonds', 
+      cut: 'Brillant Cut'
     },
     {
       name: "Yellow Gold Diamond Hoop Earrings",
@@ -179,14 +251,22 @@ db.once("open", async () => {
       image: "22.webp",
       price: 1499,
       quantity: 5,
+      material: 'Gold', 
+      size: '2.71g', 
+      gemstone: 'Diamonds', 
+      cut: 'Brillant Cut'
     },
     {
-      name: "Yellow Gold Diamond Hoop Earrings",
+      name: "Pink Diamond Solitaire Stud Earrings",
       category: categories[1]._id,
       description: `Pink Diamonds become affordable with our Luminesce Lab Grown Pink Diamond Range. Rare and beautiful, these Pink Luminesce Lab Grown Diamond Solitaire Earrings are sure to become one of your favourite pairs of earrings. Set in Rose Gold and also available in a pink Luminesce Lab Grown Diamond ring and matching Pink Solitaire Pendant. Luminesce Lab Grown Diamonds are quickly increasing in popularity as not only do they offer a bigger, better and brighter Diamond for less, they are also the most environmentally friendly choice when selecting your next diamond.`,
       image: "23.webp",
       price: 699,
       quantity: 32,
+      material: 'Rose Gold', 
+      size: '-', 
+      gemstone: 'Pink Diamonds', 
+      cut: 'Brillant Cut'
     },
     {
       name: "Yellow Gold Natural Sapphire Studs",
@@ -195,6 +275,10 @@ db.once("open", async () => {
       image: "24.webp",
       price: 999,
       quantity: 13,
+      material: 'Gold', 
+      size: '-', 
+      gemstone: 'Diamonds, Natural Sapphire', 
+      cut: 'Brillant Cut'
     },
     {
       name: "Yellow SOLID Gold Heavy Curb Chain",
@@ -203,6 +287,10 @@ db.once("open", async () => {
       image: "25.jpeg",
       price: 27999.3,
       quantity: 1,
+      material: 'Gold', 
+      size: '55cm', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Yellow Gold 45cm Curb Chain",
@@ -211,6 +299,10 @@ db.once("open", async () => {
       image: "26.webp",
       price: 599.5,
       quantity: 98,
+      material: 'Yellow Gold', 
+      size: '45cm', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Rhodium Plated Fancy Cleopatra Chain",
@@ -219,6 +311,10 @@ db.once("open", async () => {
       image: "27.jpeg",
       price: 459,
       quantity: 3,
+      material: 'Sterling Silver', 
+      size: '43cm', 
+      gemstone: '-', 
+      cut: '-'
     },
     {
       name: "Yellow Gold 5 Carat Diamond Bracelet",
@@ -227,10 +323,16 @@ db.once("open", async () => {
       image: "28.webp",
       price: 9099.3,
       quantity: 4,
+      material: 'Gold', 
+      size: '18.5cm', 
+      gemstone: 'Diamonds', 
+      cut: 'Mixed Cut'
     },
   ]);
 
   console.log("products seeded");
 
+  await User.deleteMany(); 
+  
   process.exit();
 });

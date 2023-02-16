@@ -12,6 +12,7 @@
   box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
   border-top-left-radius: .5rem;
   transition: all 0.3s ease-out;
+  z-index: 99; 
 }
 
 .cart h2 {
