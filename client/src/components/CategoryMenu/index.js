@@ -8,6 +8,8 @@ import {
 import { QUERY_CATEGORIES } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import { Link } from "react-router-dom";
+import './style.css';
+
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -43,7 +45,7 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
+    <div className="categories">
       <h2>Choose a Category:</h2>
       {categories.map((item) => (
         <div className="card px-1 py-1">
