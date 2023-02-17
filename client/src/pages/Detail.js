@@ -52,23 +52,29 @@ function Detail() {
   }, [products, data, loading, dispatch, id]);
 
   const addToCart = () => {
+    const item = { image: currentProduct.image, 
+                   name: currentProduct.name, 
+                   _id: currentProduct._id, 
+                   price: currentProduct.price, 
+                   quantity: currentProduct.quantity}
+
     const itemInCart = cart.find((cartItem) => cartItem._id === id);
     if (itemInCart) {
       dispatch({
         type: UPDATE_CART_QUANTITY,
         _id: id,
-        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1,
+        quantity: parseInt(itemInCart.quantity) + 1,
       });
       idbPromise('cart', 'put', {
         ...itemInCart,
-        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1,
+        quantity: parseInt(itemInCart.quantity) + 1,
       });
     } else {
       dispatch({
         type: ADD_TO_CART,
-        product: { ...currentProduct, purchaseQuantity: 1 },
+        orderItem: { _id: id, product: item, quantity: 1, unit_price: item.price },
       });
-      idbPromise('cart', 'put', { ...currentProduct, purchaseQuantity: 1 });
+      idbPromise('cart', 'put', { _id: id, product: item, quantity: 1, unit_price: item.price }); 
     }
   };
 
