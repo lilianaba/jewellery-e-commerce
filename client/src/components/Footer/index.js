@@ -41,8 +41,8 @@ const Footer = () => {
   //   };
 
   return (
-    <Footer>
-      {/* <div className="footer-container"> */}
+      <footer>
+      <div className="footer-container">
         <h1> THIS IS OUR FOOTER INFO</h1>
         <div className="logos">
           {socialMediaImages.map((item) => (
@@ -53,8 +53,9 @@ const Footer = () => {
             </div>
           ))}
         </div>
-      {/* </div> */}
-    </Footer>
+      </div>
+      </footer>
+  
   );
 };
 
