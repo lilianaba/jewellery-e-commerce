@@ -1,6 +1,6 @@
 .footer-container{
     background-color: #D0B49F;
-    color:#201A1E;
+    color:var(--fonts);
     font-family: 'Gabriola', sans-serif;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
 }
 .footer-container .logos{
     display: flex;
-    color:#201A1E;
+    color:var(--fonts);
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -25,7 +25,7 @@
     width: auto;
     align-items: center;
     margin: 0;
-    font-size: 40px;
+    font-size: 35px;
 
 }
 

@@ -9,10 +9,10 @@ const Footer = () => {
     {
       image: "fa-brands fa-facebook",
       caption: "Facebook",
-      link:"urllink",
+      link: "urllink",
     },
     {
-      link:"url link",
+      link: "url link",
       image: "fa-brands fa-instagram",
       caption: "Instagram",
     },
@@ -22,37 +22,39 @@ const Footer = () => {
       caption: "YouTube",
     },
     {
-      link:"url link Pinterest",
+      link: "url link Pinterest",
       image: "fa-brands fa-pinterest-p",
       caption: "Pinterest",
     },
   ];
 
-//   const properties = {
-//     arrows: false,
-//     autoplay: true,
-//     duration: 3000,
-//     transitionDuration: 500,
-//     infinite: false,
-//     indicators: true,
-//     onChange: (oldIndex, newIndex) => {
-//       console.log(`fade transition from ${oldIndex} to ${newIndex}`);
-//     },
-//   };
+  //   const properties = {
+  //     arrows: false,
+  //     autoplay: true,
+  //     duration: 3000,
+  //     transitionDuration: 500,
+  //     infinite: false,
+  //     indicators: true,
+  //     onChange: (oldIndex, newIndex) => {
+  //       console.log(`fade transition from ${oldIndex} to ${newIndex}`);
+  //     },
+  //   };
 
   return (
-    <div className="footer-container">
+    <Footer>
+      {/* <div className="footer-container"> */}
         <h1> THIS IS OUR FOOTER INFO</h1>
         <div className="logos">
-        {socialMediaImages.map((item) => (
-        <div className="card px-1 py-1" key={item._id}>
-          <Link >  
-          <i className= {`${item.image}`}  ></i>
-          </Link>
+          {socialMediaImages.map((item) => (
+            <div className="card px-1 py-1" key={item._id}>
+              <Link>
+                <i className={`${item.image}`}></i>
+              </Link>
+            </div>
+          ))}
         </div>
-      ))}
-      </div>
-    </div>
+      {/* </div> */}
+    </Footer>
   );
 };
 

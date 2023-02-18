@@ -4,6 +4,7 @@
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #D0B49F;
+  --fonts:#201A1E;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -17,11 +18,17 @@ html,
 body {
   min-height: 100%;
 }
+.root{
+  position: relative;
+  height: 100%;
+  /* padding-bottom: 60px; */
+
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Brandon Grotesque Light', 'Karla', sans-serif;
+  font-family: 'Gabriola', sans-serif,'Brandon Grotesque Light', 'Karla', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -87,7 +94,7 @@ header {
 }
 
 header a {
-  color: var(--light);
+  color: var(--fonts);
 }
 
 nav {

@@ -43,6 +43,7 @@ h2{
   font-family: 'Gabriola', sans-serif;
   font-weight: lighter;
   font-size: 42px;
+  color:var(--fonts);
 }
 p{
   font-family:'Gabriola', sans-serif;
