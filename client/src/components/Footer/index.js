@@ -28,20 +28,8 @@ const Footer = () => {
     },
   ];
 
-  //   const properties = {
-  //     arrows: false,
-  //     autoplay: true,
-  //     duration: 3000,
-  //     transitionDuration: 500,
-  //     infinite: false,
-  //     indicators: true,
-  //     onChange: (oldIndex, newIndex) => {
-  //       console.log(`fade transition from ${oldIndex} to ${newIndex}`);
-  //     },
-  //   };
-
   return (
-      <footer>
+    <footer>
       <div className="footer-container">
         <h1> THIS IS OUR FOOTER INFO</h1>
         <div className="logos">
@@ -54,8 +42,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      </footer>
-  
+    </footer>
   );
 };
 

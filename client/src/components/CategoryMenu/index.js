@@ -8,8 +8,8 @@ import {
 import { QUERY_CATEGORIES } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import { Link } from "react-router-dom";
-import './style.css';
-
+import "./style.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -36,28 +36,17 @@ function CategoryMenu() {
       });
     }
   }, [categoryData, loading, dispatch]);
-/*
-  const handleClick = (id) => {
-    dispatch({
-      type: UPDATE_CURRENT_CATEGORY,
-      currentCategory: id,
-    });
-  };
-*/
+
   return (
     <div className="categories">
       <h2>Choose a Category:</h2>
       {categories.map((item) => (
         <div className="card px-1 py-1" key={item._id}>
-          <Link
-            to={`/category/${item._id}`}
-          >  
-            <img alt={item.name} src={`/images/${item.image}`} />
+          <Link to={`/category/${item._id}`}>
+            <LazyLoadImage alt={item.name} src={`/images/${item.image}`} />
           </Link>
-          <Link
-            to={`/category/${item._id}`}
-          > 
-          <p>{item.name}</p>
+          <Link to={`/category/${item._id}`}>
+            <p>{item.name}</p>
           </Link>
         </div>
       ))}

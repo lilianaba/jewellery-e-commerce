@@ -29,7 +29,7 @@ img {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 !important;
- }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -38,18 +38,18 @@ img {
   }
 }
 
-h2{
-  font-family: 'Gabriola', sans-serif;
+h2 {
+  font-family: "Gabriola", sans-serif;
   font-weight: lighter;
   font-size: 42px;
-  color:var(--fonts);
+  color: var(--fonts);
 }
-p{
-  font-family:'Gabriola', sans-serif;
+p {
+  font-family: "Gabriola", sans-serif;
   font-size: 2rem;
   color: grey;
   margin: 2px;
 }
-a{
-  margin:2px;
+a {
+  margin: 2px;
 }

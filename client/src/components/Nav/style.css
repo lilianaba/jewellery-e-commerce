@@ -1,11 +1,11 @@
-h1{
-    font-family: 'Bargiery', sans-serif,'Flaemische Kanzleischrift', sans-serif;
-    font-weight: lighter;
-    font-size: 60px;
+h1 {
+  font-family: "Bargiery", sans-serif, "Flaemische Kanzleischrift", sans-serif;
+  font-weight: lighter;
+  font-size: 60px;
 }
-a{
-    font-weight: lighter;
+a {
+  font-weight: lighter;
 }
-.mx-1{
-    font-size: 23px;
+.mx-1 {
+  font-size: 23px;
 }
