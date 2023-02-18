@@ -1,0 +1,35 @@
+.footer-container{
+    background-color: #D0B49F;
+    color:#201A1E;
+    font-family: 'Gabriola', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-container h1{
+    font-family: 'Gabriola', sans-serif;    
+    text-align: center;
+    width: 100vw;
+
+}
+.footer-container .logos{
+    display: flex;
+    color:#201A1E;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container .card{
+    width: auto;
+    align-items: center;
+    margin: 0;
+    font-size: 40px;
+
+}
+
+.footer-container i{
+    color:#201A1E;
+    
+}

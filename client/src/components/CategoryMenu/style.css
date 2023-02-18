@@ -30,5 +30,22 @@ img {
     justify-content: space-evenly;
     flex-direction: row;
     margin: 0 !important;
+ }
+}
+
+@media screen and (max-width: 768px) {
+  .h2 {
+    font-size: 32px;
   }
+}
+
+h2{
+  font-family: 'Gabriola', sans-serif;
+  font-weight: lighter;
+  font-size: 42px;
+}
+p{
+  font-family:'Gabriola', sans-serif;
+  font-size: 2rem;
+  color: grey;
 }
