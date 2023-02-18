@@ -18,7 +18,7 @@ html,
 body {
   min-height: 100%;
 }
-.root{
+#root{
   position: relative;
   height: 100%;
   /* padding-bottom: 60px; */

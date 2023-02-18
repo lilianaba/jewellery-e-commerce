@@ -2,7 +2,7 @@ import React from "react";
 // import { Slide ,Fade} from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { Link } from "react-router-dom";
-import "../Footer/style.css";
+import "./style.css";
 
 const Footer = () => {
   const socialMediaImages = [

@@ -1,3 +1,11 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    right: 0;
+    padding-bottom: 40px;
+}
 .footer-container{
     background-color: #D0B49F;
     color:var(--fonts);

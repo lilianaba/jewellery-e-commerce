@@ -3,7 +3,6 @@ import React from "react";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
 import Banner from "../components/Banner";
-import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -15,7 +14,7 @@ const Home = () => {
 
       <Cart />
     </div>
-    <Footer />
+
     </div>
   );
 };

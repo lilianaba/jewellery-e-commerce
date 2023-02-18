@@ -4,7 +4,7 @@ import { useStoreContext } from '../utils/GlobalState';
 import { UPDATE_CURRENT_CATEGORY } from '../utils/actions';
 import ProductList from "../components/ProductList";
 import Cart from "../components/Cart";
-import Footer from "../components/Footer";
+
 
 const Products= () => {
   const [state, dispatch] = useStoreContext();
@@ -22,7 +22,6 @@ const Products= () => {
     <div className="container">
       <ProductList />
       <Cart />
-      <Footer />
     </div>
   );
 };
