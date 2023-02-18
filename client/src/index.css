@@ -153,9 +153,18 @@ input:focus {
   margin-right: auto;
 }
 
+
+.product-container div img {
+  margin-right: 5%;
+  }
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
 }
 
 .space-between {
@@ -234,6 +243,23 @@ input:focus {
 #previous-order {
   border-bottom: 1px solid var(--dark);
   padding-bottom: 2%;
+}
+
+.product-img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  margin-right: 5%;
+}
+
+.product {
+  flex-basis: 35%;
+  margin-right: 7%;
+}
+
+.product-container {
+  margin-left: 10%;
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 768px) {
