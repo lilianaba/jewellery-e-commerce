@@ -10,7 +10,7 @@
   justify-content: center;
   width: 30%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
 }
 
 img {
@@ -28,7 +28,6 @@ img {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-direction: row;
     margin: 0 !important;
  }
 }
@@ -49,4 +48,8 @@ p{
   font-family:'Gabriola', sans-serif;
   font-size: 2rem;
   color: grey;
+  margin: 2px;
+}
+a{
+  margin:2px;
 }

@@ -15,15 +15,17 @@
 }
 
 html,
-body {
-  min-height: 100%;
+body{
+  min-height: 100vh;
+  /* display: flex; */
+  min-width:100vw;
 }
-#root{
-  position: relative;
-  height: 100%;
-  /* padding-bottom: 60px; */
 
-}
+ #root{
+  position: relative;
+  height: 100vh;
+  /* padding-bottom: 60px; */
+ }
 
 body {
   margin: 0;
@@ -33,6 +35,10 @@ body {
   line-height: 1.5;
   font-size: 16px;
   color: var(--dark);
+  min-height: 100vh;
+  display: flex ;
+  flex-direction: column ;
+
 }
 
 h1,

@@ -1,8 +1,11 @@
 h1{
     font-family: 'Bargiery', sans-serif,'Flaemische Kanzleischrift', sans-serif;
     font-weight: lighter;
-    font-size: 50px;
+    font-size: 60px;
 }
 a{
     font-weight: lighter;
+}
+.mx-1{
+    font-size: 23px;
 }

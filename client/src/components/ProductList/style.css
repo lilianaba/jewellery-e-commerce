@@ -1,0 +1,9 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+.card div{
+    display:grid ;
+}

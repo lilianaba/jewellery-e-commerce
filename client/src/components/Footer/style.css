@@ -1,10 +1,12 @@
 footer{
-    position: absolute;
+    /* position:unset; */
     bottom: 0;
     left: 0;
     text-align: center;
     right: 0;
-    padding-bottom: 40px;
+    margin-top:auto 0; 
+    display:inherit;
+    /* display: flex ; */
 }
 .footer-container{
     background-color: #D0B49F;
@@ -19,6 +21,7 @@ footer{
     font-family: 'Gabriola', sans-serif;    
     text-align: center;
     width: 100vw;
+    font-size: 30px;
 
 }
 .footer-container .logos{
@@ -33,7 +36,7 @@ footer{
     width: auto;
     align-items: center;
     margin: 0;
-    font-size: 35px;
+    font-size: 25px;
 
 }
 

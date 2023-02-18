@@ -53,7 +53,11 @@ function CategoryMenu() {
             to={`/category/${item._id}`}
           >  
             <img alt={item.name} src={`/images/${item.image}`} />
-            <p>{item.name}</p>
+          </Link>
+          <Link
+            to={`/category/${item._id}`}
+          > 
+          <p>{item.name}</p>
           </Link>
         </div>
       ))}

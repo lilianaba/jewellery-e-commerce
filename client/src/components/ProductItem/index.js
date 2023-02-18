@@ -47,11 +47,13 @@ function ProductItem(item) {
           alt={name}
           src={`/images/${image}`}
         />
+      </Link>
+      <Link to={`/products/${_id}`}>
         <p>{name}</p>
       </Link>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <span>${price}</span>
+        <span> ${price}</span>
       </div>
       <button onClick={addToCart}>Add to cart</button>
     </div>
