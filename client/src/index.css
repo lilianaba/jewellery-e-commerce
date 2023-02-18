@@ -207,7 +207,7 @@ input:focus {
 }
 
 .card {
-  width: 25%;
+  width: 35%;
   text-align: center;
 }
 
@@ -224,6 +224,7 @@ input:focus {
   height: 500px
 }
 
+/* styles for profile page */
 #user-info {
   border-bottom: 1px solid var(--dark);
   padding-bottom: 2%;
@@ -234,6 +235,29 @@ input:focus {
 #previous-order {
   border-bottom: 1px solid var(--dark);
   padding-bottom: 2%;
+}
+
+#previous-order p {
+  margin-bottom: 2%;
+}
+
+#order-item-image {
+  width: 20%; 
+  padding: 1%; 
+}
+
+#order-item {
+  margin-bottom: 2%; 
+}
+
+#order-item-text {
+  margin: 3% 0 0 5%; 
+  width: 65%; 
+}
+
+#order-item-text p {
+  font-size: 1.1rem; 
+  line-height: 1;
 }
 
 @media screen and (max-width: 768px) {

@@ -19,7 +19,7 @@ const productSchema = new Schema({
     required: true,
     min: 0.99,
   },
-  stock: {
+  quantity: {
     type: Number,
     min: 0,
     default: 0,
@@ -33,8 +33,8 @@ const productSchema = new Schema({
   gemstone: {
     type: String,
   },
-  imageID: {
-    type: Number,
+  cut: {
+    type: String,
   },
   category: {
     type: Schema.Types.ObjectId,

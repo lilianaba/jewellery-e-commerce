@@ -31,8 +31,8 @@ const resolvers = {
     user: async (parent, args, context) => {
       if (context.user) {
         const user = await User.findById(context.user._id).populate({
-          path: 'orders.products',
-          populate: 'category'
+          path: 'orders.orderItems',
+          populate: 'product'
         });
 
         user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
@@ -45,8 +45,8 @@ const resolvers = {
     order: async (parent, { _id }, context) => {
       if (context.user) {
         const user = await User.findById(context.user._id).populate({
-          path: 'orders.products',
-          populate: 'category'
+          path: 'orders.orderItems',
+          populate: 'product'
         });
 
         return user.orders.id(_id);
@@ -56,27 +56,28 @@ const resolvers = {
     },
     checkout: async (parent, args, context) => {
       const url = new URL(context.headers.referer).origin;
-      const order = new Order({ products: args.products });
+      const order = new Order({ orderItems: args.orderItems });
       const line_items = [];
 
-      const { products } = await order.populate('products');
+      const { orderItems } = await order.populate({ path: 'orderItems', populate: 'product' });
 
-      for (let i = 0; i < products.length; i++) {
+      for (let i = 0; i < orderItems.length; i++) {
+        console.log(`${url}/images/${orderItems[i].product.image}`); 
         const product = await stripe.products.create({
-          name: products[i].name,
-          description: products[i].description,
-          images: [`${url}/images/${products[i].image}`]
+          name: orderItems[i].product.name,
+          description: orderItems[i].product.description,
+          images: [`${url}/images/${orderItems[i].product.image}`]
         });
 
         const price = await stripe.prices.create({
           product: product.id,
-          unit_amount: products[i].price * 100,
-          currency: 'usd',
+          unit_amount: orderItems[i].unit_price * 100,
+          currency: 'AUD',
         });
 
         line_items.push({
           price: price.id,
-          quantity: 1
+          quantity: orderItems[i].quantity
         });
       }
 
@@ -98,10 +99,10 @@ const resolvers = {
 
       return { token, user };
     },
-    addOrder: async (parent, { products }, context) => {
+    addOrder: async (parent, { orderItems }, context) => {
       console.log(context);
       if (context.user) {
-        const order = new Order({ products });
+        const order = new Order({ orderItems });
 
         await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
 

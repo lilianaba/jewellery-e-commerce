@@ -8,6 +8,8 @@ import {
 import { QUERY_CATEGORIES } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import { Link } from "react-router-dom";
+import './style.css';
+
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -34,26 +36,22 @@ function CategoryMenu() {
       });
     }
   }, [categoryData, loading, dispatch]);
-
+/*
   const handleClick = (id) => {
     dispatch({
       type: UPDATE_CURRENT_CATEGORY,
       currentCategory: id,
     });
   };
-
+*/
   return (
-    <div>
+    <div className="categories">
       <h2>Choose a Category:</h2>
       {categories.map((item) => (
-        <div className="card px-1 py-1">
+        <div className="card px-1 py-1" key={item._id}>
           <Link
             to={`/category/${item._id}`}
-            key={item._id}
-            onClick={() => {
-              handleClick(item._id);
-            }}
-          >
+          >  
             <img alt={item.name} src={`/images/${item.image}`} />
             <p>{item.name}</p>
           </Link>
