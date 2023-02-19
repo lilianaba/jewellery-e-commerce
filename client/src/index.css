@@ -1,14 +1,14 @@
 :root {
   --primary: #2869b8;
   --secondary: #92bdd7;
-  --tertiary: #B12704;
+  --tertiary: #b12704;
   --light: #fafafa;
   --dark: #312732;
-  --font:#201A1E;
-  --gfont:#808080;
-  --theme: #D0B49F;
-  --champage:#E4D4C8;
-  --pewter:#E2E6E7;
+  --font: #201a1e;
+  --gfont: #808080;
+  --theme: #d0b49f;
+  --champagne: #e4d4c8;
+  --pewter: #e2e6e7;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -26,7 +26,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Brandon Grotesque Light', 'Karla', sans-serif;
+  font-family: "Brandon Grotesque Light", "Karla", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -39,13 +39,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Brandon Grotesque Light', 'Rubik', sans-serif;
+  font-family: "Brandon Grotesque Light", "Rubik", sans-serif;
   margin: 5px 0;
   line-height: 1.25;
 }
 
 h1 {
-  font-family: 'Reem Kufi Ink', sans-serif; 
+  font-family: "Reem Kufi Ink", sans-serif;
   font-size: 2.1rem;
   width: 50%;
 }
@@ -96,33 +96,33 @@ header a {
 }
 
 nav {
-  width: 50%; 
-  display: flex; 
-  align-items: center; 
+  width: 50%;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
 }
 
 button {
-  font-family: 'Brandon Grotesque Light', 'Karla', sans-serif;
+  font-family: "Brandon Grotesque Light", "Karla", sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border-radius: .1rem;
+  border-radius: 0.1rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 1px 1px;
   background-color: var(--dark);
-  color: var(--light); 
+  color: var(--light);
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 img {
@@ -148,7 +148,7 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -221,12 +221,12 @@ input:focus {
 }
 
 #banner-image {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  background-size: cover; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
   background-position: center;
-  height: 500px
+  height: 500px;
 }
 
 /* styles for profile page */
@@ -247,21 +247,21 @@ input:focus {
 }
 
 #order-item-image {
-  width: 20%; 
-  padding: 1%; 
+  width: 20%;
+  padding: 1%;
 }
 
 #order-item {
-  margin-bottom: 2%; 
+  margin-bottom: 2%;
 }
 
 #order-item-text {
-  margin: 3% 0 0 5%; 
-  width: 65%; 
+  margin: 3% 0 0 5%;
+  width: 65%;
 }
 
 #order-item-text p {
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
   line-height: 1;
 }
 
@@ -271,6 +271,6 @@ input:focus {
   }
 
   #banner-image {
-    height: 350px; 
+    height: 350px;
   }
 }
