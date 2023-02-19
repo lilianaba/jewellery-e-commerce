@@ -4,6 +4,11 @@
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #312732;
+  --font:#201A1E;
+  --gfont:#808080;
+  --theme: #D0B49F;
+  --champage:#E4D4C8;
+  --pewter:#E2E6E7;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);

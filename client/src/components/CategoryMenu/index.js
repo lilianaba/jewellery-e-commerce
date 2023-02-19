@@ -9,6 +9,7 @@ import { QUERY_CATEGORIES } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import { Link } from "react-router-dom";
 import './style.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 function CategoryMenu() {
@@ -36,14 +37,7 @@ function CategoryMenu() {
       });
     }
   }, [categoryData, loading, dispatch]);
-/*
-  const handleClick = (id) => {
-    dispatch({
-      type: UPDATE_CURRENT_CATEGORY,
-      currentCategory: id,
-    });
-  };
-*/
+
   return (
     <div className="categories">
       <h2>Choose a Category:</h2>
@@ -52,7 +46,7 @@ function CategoryMenu() {
           <Link
             to={`/category/${item._id}`}
           >  
-            <img alt={item.name} src={`/images/${item.image}`} />
+            <LazyLoadImage alt={item.name} src={`/images/${item.image}`} />
             <p>{item.name}</p>
           </Link>
         </div>
