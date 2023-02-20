@@ -13,6 +13,7 @@ import {
 import { QUERY_PRODUCTS } from "../utils/queries";
 import { idbPromise } from "../utils/helpers";
 import spinner from "../assets/spinner.gif";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -96,7 +97,7 @@ function Detail() {
 
           <h2>{currentProduct.name}</h2>
 
-          <img
+          <LazyLoadImage
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />

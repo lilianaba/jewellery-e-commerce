@@ -8,6 +8,7 @@
 
 #cart-item img {
     border: 1px solid var(--dark);
+    color:var(--gfont);
 }
 
 #quantity {

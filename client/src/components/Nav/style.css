@@ -5,4 +5,9 @@ h1{
 }
 a{
     font-weight: lighter;
+    text-decoration: none;
+}
+li,
+ul{
+    text-decoration: none;
 }

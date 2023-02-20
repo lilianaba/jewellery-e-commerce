@@ -30,7 +30,7 @@ function Success() {
   }, [addOrder]);
 
   return (
-    <div>
+    <div className='successDiv'>
       <Jumbotron>
         <h2>Success!</h2>
         <h3>Thank you for your purchase!</h3>
