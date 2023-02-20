@@ -6,8 +6,13 @@ h1{
 a{
     font-weight: lighter;
     text-decoration: none;
+
 }
 li,
 ul{
     text-decoration: none;
+    font-size: 20px;
+}
+li::marker{
+    color:var(--theme);
 }
