@@ -62,7 +62,6 @@ const resolvers = {
       const { orderItems } = await order.populate({ path: 'orderItems', populate: 'product' });
 
       for (let i = 0; i < orderItems.length; i++) {
-        console.log(`${url}/images/${orderItems[i].product.image}`); 
         const product = await stripe.products.create({
           name: orderItems[i].product.name,
           description: orderItems[i].product.description,

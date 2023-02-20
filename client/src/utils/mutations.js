@@ -51,3 +51,18 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const UPDATE_USER = gql`
+  mutation UpdateUser(
+    $address: String, 
+    $phone: String
+  ) {
+    updateUser(
+      address: $address, 
+      phone: $phone
+    ) {
+      address
+      phone
+    }
+  }
+`;

@@ -142,8 +142,9 @@ input {
   padding: 0.25rem;
   border: 1px solid var(--dark);
   outline: none;
-  border-radius: 3px;
+  border-radius: 1px;
   transition: box-shadow 0.2s;
+  width: 100%; 
 }
 
 input:focus {
@@ -237,6 +238,10 @@ input:focus {
   margin-bottom: 3%;
 }
 
+#user-info label {
+  font-size: 1.3rem;
+}
+
 #previous-order {
   border-bottom: 1px solid var(--dark);
   padding-bottom: 2%;
@@ -272,6 +277,10 @@ input:focus {
 
   #banner-image {
     height: 350px;
+  }
+
+  form {
+    width: 100%; 
   }
 }
 
