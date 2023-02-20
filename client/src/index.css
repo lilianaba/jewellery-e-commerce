@@ -274,3 +274,10 @@ input:focus {
     height: 350px;
   }
 }
+
+
+.appDiv{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
