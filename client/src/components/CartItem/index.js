@@ -3,6 +3,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 import './style.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const CartItem = ({ item }) => {
 
@@ -38,7 +39,7 @@ const CartItem = ({ item }) => {
   return (
     <div className="flex-row" id="cart-item">
       <div>
-        <img
+        <LazyLoadImage
           src={`/images/${item.product.image}`}
           alt={`${item.product.name}`}
         />

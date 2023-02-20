@@ -17,7 +17,7 @@
 
 .cart h2 {
   font-size: 1.5rem;
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid var(--theme);
   padding-bottom: 1rem;
   margin: 0.5rem 0.5rem;
 }
@@ -50,6 +50,7 @@
   border: 2px solid var(--dark); 
   padding: .25rem;
   width: 68px;
+  color:var(--theme);
   height: 68px;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, .5);
 }
@@ -84,7 +85,7 @@
   font-size: 180%;
   margin-right: 10%; 
   margin-top: 10%; 
-  color: var(--dark); 
+  color: var(--gfont);
 }
 
 #total {
