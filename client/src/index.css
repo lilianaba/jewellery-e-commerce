@@ -76,7 +76,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--gfont);
   text-decoration: none;
   font-weight: bold;
 }
@@ -87,7 +87,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--theme);
   justify-content: space-between;
 }
 
@@ -112,7 +112,7 @@ button {
   outline: none;
   cursor: pointer;
   margin: 1px 1px;
-  background-color: var(--dark);
+  background-color: var(--theme);
   color: var(--light);
 }
 

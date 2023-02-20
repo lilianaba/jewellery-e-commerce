@@ -5,12 +5,14 @@
 .card {
   display: inline-flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
   width: 30%;
   margin: 0 auto;
   padding: 10px;
+  font-family: "Gabriola", sans-serif;
+  color: var(--gfont);
 }
 
 img {
@@ -26,9 +28,11 @@ img {
     display: inline-flex;
     align-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    flex-direction: row;
     margin: 0 !important;
   }
+}
+p{
+  color: var(--gfont);
 }

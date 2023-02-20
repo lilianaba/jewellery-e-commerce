@@ -5,6 +5,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import './style.css';
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
@@ -47,7 +48,7 @@ function ProductItem(item) {
       <Link to={`/products/${_id}`}>
         <p>{name}</p>
       </Link>
-      <div>
+      <div className="stockPrice">
         <div>
           {quantity} {pluralize("item", quantity)} in stock
         </div>
