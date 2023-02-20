@@ -15,6 +15,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-google-autocomplete": "^2.7.3",
+    "react-lazy-load-image-component": "^1.5.6",
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.2",
     "react-slideshow-image": "^4.2.0",
