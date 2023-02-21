@@ -11,7 +11,7 @@ function OrderHistory() {
   const [message, setMessage] = useState(''); 
   const [updateUser, { error }] = useMutation(UPDATE_USER);
 
-  const { data } = useQuery(QUERY_USER, {fetchPolicy: 'network-only'});
+  const { loading, data } = useQuery(QUERY_USER, {fetchPolicy: 'network-only'});
   let user;
 
   if (data) {
@@ -137,7 +137,10 @@ function OrderHistory() {
             ))}
           </>
         ) : 
-        <p>Session expired.  Please login to access your profile.</p>}
+        !loading ? (
+        <p>Session expired.  Please login to access your profile.</p>
+        ) : null
+        }
       </div>
     </>
   );

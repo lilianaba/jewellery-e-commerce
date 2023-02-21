@@ -238,8 +238,12 @@ input:focus {
   margin-bottom: 3%;
 }
 
+#user-info p {
+  font-size: 1.4rem; 
+}
+
 #user-info label {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 #previous-order {
@@ -249,6 +253,7 @@ input:focus {
 
 #previous-order p {
   margin-bottom: 2%;
+  font-size: 1.4rem; 
 }
 
 #order-item-image {
