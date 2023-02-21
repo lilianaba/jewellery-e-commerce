@@ -11,7 +11,7 @@ function OrderHistory() {
   const [message, setMessage] = useState(''); 
   const [updateUser, { error }] = useMutation(UPDATE_USER);
 
-  const { data } = useQuery(QUERY_USER);
+  const { data } = useQuery(QUERY_USER, {fetchPolicy: 'network-only'});
   let user;
 
   if (data) {
@@ -28,7 +28,7 @@ function OrderHistory() {
   const handleProfileUpdate = async (event) => {
     event.preventDefault();
     const phoneRegex = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-    console.log(formState); 
+
     if (formState.phone) {
       if (!formState.phone.match(phoneRegex)) {
         setMessage('Incorrect Phone Number Input.'); 
@@ -41,7 +41,9 @@ function OrderHistory() {
         variables: { address: formState.address, phone: formState.phone },
       });
       
-      if (mutationResponse) setMessage('Information updated successfully'); 
+      if (mutationResponse) {
+        setMessage('Information updated successfully'); 
+      }
     } catch (e) {
       console.log(e);
     }
