@@ -43,7 +43,7 @@ function ProductItem(item) {
   return (
     <div className="card px-1 py-1">
       <Link to={`/products/${_id}`}>
-        <LazyLoadImage alt={name} src={`/images/${image}`} />
+        <LazyLoadImage alt={name} src={`/images/${image}`} effect="blur"/>
       </Link>
       <Link to={`/products/${_id}`}>
         <p>{name}</p>

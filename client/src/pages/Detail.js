@@ -101,7 +101,6 @@ function Detail() {
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
-
           <p>{currentProduct.description}</p>
 
           <p>

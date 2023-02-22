@@ -35,7 +35,7 @@ const Footer = () => {
         <h1> THIS IS OUR FOOTER INFO</h1>
         <div className="logos">
           {socialMediaImages.map((item) => (
-            <div className="card px-1 py-1" key={item._id}>
+            <div className="card px-1 py-1" key={item.caption}>
               <Link>
                 <i className={`${item.image}`}></i>
               </Link>
