@@ -89,6 +89,8 @@ a:hover {
 header {
   background: var(--theme);
   justify-content: space-between;
+  height: 120px;
+  align-content: center;
 }
 
 header a {
@@ -286,6 +288,9 @@ input:focus {
 
   form {
     width: 100%; 
+  }
+  header{
+    height: 90px;
   }
 }
 
