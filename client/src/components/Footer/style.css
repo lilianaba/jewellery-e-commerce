@@ -14,7 +14,8 @@
   font-family: "Gabriola", sans-serif;
   justify-content: center;
   align-items: center;
-  margin-top: auto
+  margin-top: auto;
+  text-align: center;
 }
 
 .footer-container h1 {
@@ -22,6 +23,10 @@
   text-align: center;
   width: 100vw;
   font-size: 30px;
+  font-weight: bold;
+}
+.footer-container h3{
+  font-weight: lighter;
 }
 .footer-container .logos {
   display: flex;
@@ -40,4 +45,5 @@
 
 .footer-container i {
   color: #201a1e;
+
 }
