@@ -10,20 +10,20 @@ const Footer = () => {
     {
       image: "fa-brands fa-facebook",
       caption: "Facebook",
-      link: "urllink",
+      link: "https://www.facebook.com/",
     },
     {
-      link: "url link",
+      link: "https://www.instagram.com/",
       image: "fa-brands fa-instagram",
       caption: "Instagram",
     },
     {
-      link: "url link",
+      link: "https://www.youtube.com/",
       image: "fa-brands fa-youtube",
-      caption: "YouTube",
+      caption: "You Tube",
     },
     {
-      link: "url link Pinterest",
+      link: "https://www.pinterest.com/",
       image: "fa-brands fa-pinterest-p",
       caption: "Pinterest",
     },
@@ -32,11 +32,12 @@ const Footer = () => {
   return (
     // <footer>
       <div className="footer-container">
-        <h1> THIS IS OUR FOOTER INFO</h1>
+        <h1> Bellagio Jewellery © 2023 </h1>
+        <h3> Powered by Stripe </h3>
         <div className="logos">
           {socialMediaImages.map((item) => (
             <div className="card px-1 py-1" key={item.caption}>
-              <Link>
+              <Link to={`${item.link}`} target="_blank">
                 <i className={`${item.image}`}></i>
               </Link>
             </div>
