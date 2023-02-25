@@ -142,11 +142,12 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--gfont);
   outline: none;
-  border-radius: 1px;
+  border-radius: 5px;
   transition: box-shadow 0.2s;
   width: 100%; 
+  color:var(--gfont)
 }
 
 input:focus {
