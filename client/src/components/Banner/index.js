@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide, Fade } from "react-slideshow-image";
+import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 const Banner = () => {
@@ -64,9 +64,9 @@ const Banner = () => {
     transitionDuration: 500,
     infinite: true,
     indicators: true,
-    onChange: (oldIndex, newIndex) => {
+/*    onChange: (oldIndex, newIndex) => {
       console.log(`fade transition from ${oldIndex} to ${newIndex}`);
-    },
+    }, */
   };
 
   return (

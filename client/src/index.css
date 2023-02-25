@@ -286,6 +286,11 @@ input:focus {
   line-height: 1;
 }
 
+#product-item-image {
+  width: 42%; 
+  margin: 4%; 
+}
+
 .product-pic {
   width: 100%;
   height: 90%;
@@ -294,17 +299,17 @@ input:focus {
 }
 
 .product {
-  flex-basis: 35%;
-  margin-right: 7%;
+  flex-basis: 60%;
 }
 
 .product-container {
-  margin-left: 10%;
-  margin-top: 100px;
+  width: 60%; 
+  margin: 5%; 
 }
 
 .product-container p {
   font-size: 1.50rem;
+  text-align: justify;
 }
 
 .hidden-toast {
@@ -324,12 +329,18 @@ input:focus {
   font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
  
 }
-.send-button input{
+
+#send-button {
+  width: 100%; 
+}
+/*
+.send-button input {
   background-color: var(--theme);
   color: var(--light);
   font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
   font-size: 1.5rem;
 }
+*/
 
 .user-inf {
   /* margin-bottom: 1rem! important; */
@@ -349,13 +360,14 @@ input:focus {
   font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
  
 }
-.message-content textarea{
 
+.message-content textarea{
   min-height: 150px;
   font-size: 1.5rem;
   color: var(--gfont);
 
 }
+
 .user-inf input{
   padding-bottom: 15px;
   margin-bottom: 10px;
@@ -363,9 +375,11 @@ input:focus {
   font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
 }
 
-
-
-
+.appDiv {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (max-width: 768px) {
   .card {
@@ -386,6 +400,16 @@ input:focus {
   .flex {
     flex-direction: column;
   }
+
+  #product-item-image {
+    width: 92%; 
+  }
+
+  .product-container {
+    width: 90%; 
+    margin: 5%; 
+  }
+
   .product-container p {
     font-size: 1.25rem;
   }
@@ -396,10 +420,4 @@ input:focus {
   .contact-form h1{
     width: 100%;
   }
-}
-
-.appDiv {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
