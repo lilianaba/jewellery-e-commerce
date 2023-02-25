@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
-import { loadStripe } from '@stripe/stripe-js';
-import { useLazyQuery } from '@apollo/client';
-import { QUERY_CHECKOUT } from '../../utils/queries';
-import { idbPromise } from '../../utils/helpers';
-import CartItem from '../CartItem';
-import Auth from '../../utils/auth';
-import { useStoreContext } from '../../utils/GlobalState';
-import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
-import './style.css';
+import React, { useEffect } from "react";
+import { loadStripe } from "@stripe/stripe-js";
+import { useLazyQuery } from "@apollo/client";
+import { QUERY_CHECKOUT } from "../../utils/queries";
+import { idbPromise } from "../../utils/helpers";
+import CartItem from "../CartItem";
+import Auth from "../../utils/auth";
+import { useStoreContext } from "../../utils/GlobalState";
+import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
+import "./style.css";
 
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_API_PK);
 
@@ -25,7 +25,7 @@ const Cart = () => {
 
   useEffect(() => {
     async function getCart() {
-      const cart = await idbPromise('cart', 'get');
+      const cart = await idbPromise("cart", "get");
       dispatch({ type: ADD_MULTIPLE_TO_CART, orderItems: [...cart] });
     }
 
@@ -47,15 +47,15 @@ const Cart = () => {
   }
 
   function itemTotal() {
-    let sum = 0; 
+    let sum = 0;
     state.cart.forEach((item) => {
-      sum += item.quantity; 
-    }); 
-    return sum; 
+      sum += item.quantity;
+    });
+    return sum;
   }
 
   function submitCheckout() {
-/*    const orderItemIds = [];
+    /*    const orderItemIds = [];
 
     state.cart.forEach((item) => {
       for (let i = 0; i < item.quantity; i++) {
@@ -72,7 +72,9 @@ const Cart = () => {
     return (
       <div className="cart-closed" onClick={toggleCart}>
         <span role="img" aria-label="trash">
-          <i className="fa-solid fa-bag-shopping" id="shopping-bag"><span id="item-count">{itemTotal()}</span></i>
+          <i className="fa-solid fa-bag-shopping" id="shopping-bag">
+            <span id="item-count">{itemTotal()}</span>
+          </i>
         </span>
       </div>
     );
@@ -81,7 +83,7 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="close" onClick={toggleCart}>
-        <i className="far fa-window-close" id='close-icon'></i>
+        <i className="far fa-window-close" id="close-icon"></i>
       </div>
       <h2>My Shopping Bag</h2>
       {state.cart.length ? (
@@ -94,7 +96,9 @@ const Cart = () => {
             <strong id="total">Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
-              <button id="checkout-btn" onClick={submitCheckout}>Checkout</button>
+              <button id="checkout-btn" onClick={submitCheckout}>
+                Checkout
+              </button>
             ) : (
               <span>(Please login/signup to checkout.)</span>
             )}
@@ -102,7 +106,8 @@ const Cart = () => {
         </div>
       ) : (
         <h5>
-          Umm... the shopping bag is empty.  Still thinking?  Just add your favourite items to your shopping bag!
+          Umm... the shopping bag is empty. Still thinking? Just add your
+          favourite items to your shopping bag!
         </h5>
       )}
     </div>

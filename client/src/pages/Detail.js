@@ -13,7 +13,7 @@ import {
 import { QUERY_PRODUCTS } from "../utils/queries";
 import { idbPromise } from "../utils/helpers";
 import spinner from "../assets/spinner.gif";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -53,11 +53,13 @@ function Detail() {
   }, [products, data, loading, dispatch, id]);
 
   const addToCart = () => {
-    const item = { image: currentProduct.image, 
-                   name: currentProduct.name, 
-                   _id: currentProduct._id, 
-                   price: currentProduct.price, 
-                   quantity: currentProduct.quantity}
+    const item = {
+      image: currentProduct.image,
+      name: currentProduct.name,
+      _id: currentProduct._id,
+      price: currentProduct.price,
+      quantity: currentProduct.quantity,
+    };
 
     const itemInCart = cart.find((cartItem) => cartItem._id === id);
     if (itemInCart) {
@@ -73,10 +75,20 @@ function Detail() {
     } else {
       dispatch({
         type: ADD_TO_CART,
-        orderItem: { _id: id, product: item, quantity: 1, unit_price: item.price },
+        orderItem: {
+          _id: id,
+          product: item,
+          quantity: 1,
+          unit_price: item.price,
+        },
       });
 
-      idbPromise('cart', 'put', { _id: id, product: item, quantity: 1, unit_price: item.price }); 
+      idbPromise("cart", "put", {
+        _id: id,
+        product: item,
+        quantity: 1,
+        unit_price: item.price,
+      });
     }
   };
 

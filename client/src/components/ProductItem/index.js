@@ -5,7 +5,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import './style.css';
+import "./style.css";
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
@@ -43,7 +43,7 @@ function ProductItem(item) {
   return (
     <div className="card px-1 py-1">
       <Link to={`/products/${_id}`}>
-        <LazyLoadImage alt={name} src={`/images/${image}`} effect="blur"/>
+        <LazyLoadImage alt={name} src={`/images/${image}`} effect="blur" />
       </Link>
       <Link to={`/products/${_id}`}>
         <p>{name}</p>

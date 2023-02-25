@@ -1,4 +1,4 @@
-import './style.css';
+import "./style.css";
 
 import React from "react";
 // import { Slide ,Fade} from "react-slideshow-image";
@@ -31,19 +31,19 @@ const Footer = () => {
 
   return (
     // <footer>
-      <div className="footer-container">
-        <h1> Bellagio Jewellery © 2023 </h1>
-        <h3> Powered by Stripe </h3>
-        <div className="logos">
-          {socialMediaImages.map((item) => (
-            <div className="card px-1 py-1" key={item.caption}>
-              <Link to={`${item.link}`} target="_blank">
-                <i className={`${item.image}`}></i>
-              </Link>
-            </div>
-          ))}
-        </div>
+    <div className="footer-container">
+      <h1> Bellagio Jewellery © 2023 </h1>
+      <h3> Powered by Stripe </h3>
+      <div className="logos">
+        {socialMediaImages.map((item) => (
+          <div className="card px-1 py-1" key={item.caption}>
+            <Link to={`${item.link}`} target="_blank">
+              <i className={`${item.image}`}></i>
+            </Link>
+          </div>
+        ))}
       </div>
+    </div>
     // </footer>
   );
 };

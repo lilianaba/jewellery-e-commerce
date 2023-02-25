@@ -9,7 +9,7 @@ const orderItemSchema = new mongoose.Schema({
   },
   unit_price: {
     type: Number,
-    default: 0, 
+    default: 0,
   },
   product: {
     type: Schema.Types.ObjectId,
@@ -23,7 +23,7 @@ const orderSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  orderItems: [orderItemSchema]
+  orderItems: [orderItemSchema],
 });
 
 const Order = mongoose.model("Order", orderSchema);

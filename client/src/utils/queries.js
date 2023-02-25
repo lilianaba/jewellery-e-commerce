@@ -9,8 +9,8 @@ export const QUERY_PRODUCTS = gql`
       price
       quantity
       image
-      material 
-      size 
+      material
+      size
       gemstone
       cut
       category {
@@ -37,8 +37,8 @@ export const QUERY_ALL_PRODUCTS = gql`
       image
       price
       quantity
-      material 
-      size 
+      material
+      size
       gemstone
       cut
       category {

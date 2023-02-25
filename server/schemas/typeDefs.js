@@ -91,7 +91,7 @@ const typeDefs = gql`
       lastName: String
       email: String
       password: String
-      address: String 
+      address: String
       phone: String
     ): User
     updateProduct(_id: ID!, quantity: Int!): Product

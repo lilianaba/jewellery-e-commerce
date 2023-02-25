@@ -39,20 +39,19 @@ function CategoryMenu() {
 
   return (
     <div>
-    <h2>Choose a Category:</h2>
-    <div className="categories">
-     
-      {categories.map((item) => (
-        <div className="card px-1 py-1" key={item._id}>
-          <Link to={`/category/${item._id}`}>
-            <LazyLoadImage alt={item.name} src={`/images/${item.image}`} />
-          </Link>
-          <Link to={`/category/${item._id}`}>
-            <p>{item.name}</p>
-          </Link>
-        </div>
-      ))}
-    </div>
+      <h2>Choose a Category:</h2>
+      <div className="categories">
+        {categories.map((item) => (
+          <div className="card px-1 py-1" key={item._id}>
+            <Link to={`/category/${item._id}`}>
+              <LazyLoadImage alt={item.name} src={`/images/${item.image}`} />
+            </Link>
+            <Link to={`/category/${item._id}`}>
+              <p>{item.name}</p>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

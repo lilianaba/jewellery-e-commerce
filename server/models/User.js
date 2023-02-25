@@ -17,11 +17,11 @@ const userSchema = new Schema({
   },
   address: {
     type: String,
-    trim: true
+    trim: true,
   },
   phone: {
     type: String,
-    trim: true
+    trim: true,
   },
   email: {
     type: String,

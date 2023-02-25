@@ -4,15 +4,15 @@
   right: 0;
   min-width: 40%;
   max-width: 60%;
-  min-height: 30%; 
+  min-height: 30%;
   max-height: 60%;
   background-color: var(--light);
   overflow: auto;
-  padding: .5rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
-  border-top-left-radius: .5rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 0.5rem;
   transition: all 0.3s ease-out;
-  z-index: 99; 
+  z-index: 99;
 }
 
 .cart h2 {
@@ -29,8 +29,8 @@
 
 .cart .close {
   position: absolute;
-  top: .5rem;
-  right: .5rem;
+  top: 0.5rem;
+  right: 0.5rem;
   cursor: pointer;
   color: var(--tertiary);
 }
@@ -47,17 +47,17 @@
   cursor: pointer;
   background-color: var(--light);
   border-radius: 50%;
-  border: 2px solid var(--dark); 
-  padding: .25rem;
+  border: 2px solid var(--dark);
+  padding: 0.25rem;
   width: 68px;
-  color:var(--theme);
+  color: var(--theme);
   height: 68px;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .cart-closed:hover {
   transform: rotate(10deg);
-  transition: 0.5s; 
+  transition: 0.5s;
 }
 
 .cart img {
@@ -67,41 +67,41 @@
 
 #shopping-bag {
   margin-left: 14px;
-  margin-top: 12px; 
+  margin-top: 12px;
 }
 
 #item-count {
   position: relative;
-  top: -16px; 
-  left: -10px; 
-  color: var(--light); 
-  font-size: 35%; 
-  padding: 15%; 
+  top: -16px;
+  left: -10px;
+  color: var(--light);
+  font-size: 35%;
+  padding: 15%;
   border-radius: 50%;
   background-color: var(--tertiary);
 }
 
 #close-icon {
   font-size: 180%;
-  margin-right: 10%; 
-  margin-top: 10%; 
+  margin-right: 10%;
+  margin-top: 10%;
   color: var(--gfont);
 }
 
 #total {
   font-size: 1.2rem;
-  margin: 1% 2%; 
+  margin: 1% 2%;
 }
 
 #checkout-btn {
-  margin: 1% 2%; 
-  width: 100%; 
+  margin: 1% 2%;
+  width: 100%;
 }
 
 .cart input {
   width: 50px;
   padding: 0;
-  margin: 0 .5rem 1rem 0;
+  margin: 0 0.5rem 1rem 0;
 }
 
 @media screen and (max-width: 640px) {

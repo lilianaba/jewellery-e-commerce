@@ -1,8 +1,8 @@
-require('dotenv').config();
-const jwt = require('jsonwebtoken');
+require("dotenv").config();
+const jwt = require("jsonwebtoken");
 
 const secret = process.env.JWT_SECRET;
-const expiration = '2h';
+const expiration = "2h";
 
 module.exports = {
   authMiddleware: function ({ req }) {
@@ -11,7 +11,7 @@ module.exports = {
 
     // ["Bearer", "<tokenvalue>"]
     if (req.headers.authorization) {
-      token = token.split(' ').pop().trim();
+      token = token.split(" ").pop().trim();
     }
 
     if (!token) {
@@ -21,9 +21,11 @@ module.exports = {
     try {
       const { data } = jwt.verify(token, secret, { maxAge: expiration });
       req.user = data;
-      console.log('Token verification message: Verified OK!'); 
+      console.log("Token verification message: Verified OK!");
     } catch {
-      console.log('Token verificaiton message: Already expired.  User needs to logon to refresh the token.');
+      console.log(
+        "Token verificaiton message: Already expired.  User needs to logon to refresh the token."
+      );
     }
 
     return req;

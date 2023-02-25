@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide ,Fade} from "react-slideshow-image";
+import { Slide, Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 const Banner = () => {
@@ -7,56 +7,54 @@ const Banner = () => {
     {
       url: "/images/banner.webp",
       caption: "Slide 1",
-      align:"center",
+      align: "center",
     },
     {
       url: "/images/banner2.jpeg",
       caption: "Slide 2",
-      align:"center",
+      align: "center",
     },
-    
+
     {
       url: "/images/banner4.jpeg",
       caption: "Slide 4",
-      align:"left",
+      align: "left",
     },
     {
       url: "/images/banner5.jpeg",
       caption: "Slide 5",
-      align:"right",
-
+      align: "right",
     },
     {
       url: "/images/banner6.webp",
       caption: "Slide 6",
-      align:"left",
+      align: "left",
     },
     {
       url: "/images/banner7.jpg",
       caption: "Slide 7",
-      align:"center",
+      align: "center",
     },
     {
       url: "/images/banner8.webp",
       caption: "Slide 8",
-      align:"center",
+      align: "center",
     },
     {
       url: "/images/banner9.jpg",
       caption: "Slide 9",
-      align:"center",
+      align: "center",
     },
     {
       url: "/images/banner10.jpg",
       caption: "Slide 10",
-      align:"left",
+      align: "left",
     },
     {
       url: "/images/banner11.jpg",
       caption: "Slide 11",
-      align:"center",
+      align: "center",
     },
-   
   ];
 
   const properties = {
@@ -73,18 +71,19 @@ const Banner = () => {
 
   return (
     <div className="slide-container">
-        <Fade {...properties}>
+      <Fade {...properties}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
               id="banner-image"
-              style={{ backgroundImage: `url(${slideImage.url})`,
-                       backgroundPosition: `${slideImage.align}`}} 
-    
+              style={{
+                backgroundImage: `url(${slideImage.url})`,
+                backgroundPosition: `${slideImage.align}`,
+              }}
             ></div>
           </div>
         ))}
-        </Fade>
+      </Fade>
     </div>
   );
 };

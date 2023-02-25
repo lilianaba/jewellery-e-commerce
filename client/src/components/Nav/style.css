@@ -1,18 +1,17 @@
-h1{
-    font-family: 'Bargiery', sans-serif,'Flaemische Kanzleischrift', sans-serif;
-    font-weight: lighter;
-    font-size: 50px;
+h1 {
+  font-family: "Bargiery", sans-serif, "Flaemische Kanzleischrift", sans-serif;
+  font-weight: lighter;
+  font-size: 50px;
 }
-a{
-    font-weight: lighter;
-    text-decoration: none;
-
+a {
+  font-weight: lighter;
+  text-decoration: none;
 }
 li,
-ul{
-    text-decoration: none;
-    font-size: 20px;
+ul {
+  text-decoration: none;
+  font-size: 20px;
 }
-li::marker{
-    color:var(--theme);
+li::marker {
+  color: var(--theme);
 }

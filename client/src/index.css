@@ -26,7 +26,8 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla",
+    sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -39,7 +40,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Rubik", sans-serif;
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Rubik",
+    sans-serif;
   margin: 5px 0;
   line-height: 1.25;
 }
@@ -146,8 +148,8 @@ input {
   outline: none;
   border-radius: 5px;
   transition: box-shadow 0.2s;
-  width: 100%; 
-  color:var(--gfont)
+  width: 100%;
+  color: var(--gfont);
 }
 
 input:focus {
@@ -242,7 +244,7 @@ input:focus {
 }
 
 #user-info p {
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
 
 #user-info label {
@@ -256,7 +258,7 @@ input:focus {
 
 #previous-order p {
   margin-bottom: 2%;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
 
 #order-item-image {
@@ -288,15 +290,14 @@ input:focus {
   }
 
   form {
-    width: 100%; 
+    width: 100%;
   }
-  header{
+  header {
     height: 90px;
   }
 }
 
-
-.appDiv{
+.appDiv {
   min-height: 100vh;
   display: flex;
   flex-direction: column;

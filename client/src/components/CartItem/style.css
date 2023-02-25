@@ -1,18 +1,18 @@
 #cart-item {
-    padding-top: 3%; 
-    font-size: 1rem;
-    width: 98%; 
-    margin: 1%; 
-    border-bottom: 1px solid var(--dark);
+  padding-top: 3%;
+  font-size: 1rem;
+  width: 98%;
+  margin: 1%;
+  border-bottom: 1px solid var(--dark);
 }
 
 #cart-item img {
-    border: 1px solid var(--dark);
-    color:var(--gfont);
+  border: 1px solid var(--dark);
+  color: var(--gfont);
 }
 
 #quantity {
-    text-align: center;
-    margin-left: 10px;
-    height: 22px; 
+  text-align: center;
+  margin-left: 10px;
+  height: 22px;
 }
