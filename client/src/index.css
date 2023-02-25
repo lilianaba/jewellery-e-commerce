@@ -177,6 +177,12 @@ input:focus {
   justify-content: flex-end;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -297,6 +303,10 @@ input:focus {
   margin-top: 100px;
 }
 
+.product-container p {
+  font-size: 1.50rem;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -313,6 +323,13 @@ input:focus {
   }
   header {
     height: 90px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+  .product-container p {
+    font-size: 1.25rem;
   }
 }
 
