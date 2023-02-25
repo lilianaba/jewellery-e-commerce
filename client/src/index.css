@@ -307,6 +307,64 @@ input:focus {
   font-size: 1.50rem;
 }
 
+.hidden-toast {
+  display: none;
+}
+
+.contact-form {
+  flex: auto;
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-top: 20px;
+  /* box-sizing: border-box; */
+}
+
+.contact-form h1{
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+ 
+}
+.send-button input{
+  background-color: var(--theme);
+  color: var(--light);
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+  font-size: 1.5rem;
+}
+
+.user-inf {
+  /* margin-bottom: 1rem! important; */
+  position: relative;
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+}
+
+.message-content {
+  width: 100%;
+  max-width: 100%;
+
+}
+
+.message-input {
+  width: 100%;
+  max-width: 100%;
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+ 
+}
+.message-content textarea{
+
+  min-height: 150px;
+  font-size: 1.5rem;
+  color: var(--gfont);
+
+}
+.user-inf input{
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+}
+
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -330,6 +388,13 @@ input:focus {
   }
   .product-container p {
     font-size: 1.25rem;
+  }
+  .contact-form {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .contact-form h1{
+    width: 100%;
   }
 }
 
