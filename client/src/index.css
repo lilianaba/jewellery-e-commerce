@@ -177,6 +177,12 @@ input:focus {
   justify-content: flex-end;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -280,6 +286,29 @@ input:focus {
   line-height: 1;
 }
 
+.product-pic {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  margin-right: 5%;
+}
+
+.product {
+  flex-basis: 35%;
+  margin-right: 7%;
+}
+
+.product-container {
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+.product-container p {
+  font-size: 1.50rem;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .card {
     width: 50%;
@@ -294,6 +323,13 @@ input:focus {
   }
   header {
     height: 90px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+  .product-container p {
+    font-size: 1.25rem;
   }
 }
 

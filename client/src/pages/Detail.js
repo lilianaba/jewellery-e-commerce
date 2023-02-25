@@ -104,27 +104,38 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+        <div className="flex">
+          <div>
+            <img
+              src={`/images/${currentProduct.image}`}
+              alt={currentProduct.name}
+              className="product-img"
+            />
+          </div>
+          <div className="product-container my-1 product">
+            <Link to="/">← Back to Products</Link>
 
-          <h2>{currentProduct.name}</h2>
+            <h2>{currentProduct.name}</h2>
 
-          <LazyLoadImage
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
-          <p>{currentProduct.description}</p>
+            <p>{currentProduct.description}</p>
+            <p>Material: {currentProduct.material}</p>
+            <p>Size: {currentProduct.size}</p>
+            <p>Gemstone: {currentProduct.gemstone}</p>
+            <p>Cut: {currentProduct.cut}</p>
 
-          <p>
-            <strong>Price:</strong>${currentProduct.price}{" "}
-            <button onClick={addToCart}>Add to Cart</button>
-            <button
-              disabled={!cart.find((p) => p._id === currentProduct._id)}
-              onClick={removeFromCart}
-            >
-              Remove from Cart
-            </button>
-          </p>
+            <p>
+              <strong>Price:</strong>${currentProduct.price}{" "}
+            </p>
+            <p>
+              <button onClick={addToCart}>Add to Cart</button>
+              <button
+                disabled={!cart.find((p) => p._id === currentProduct._id)}
+                onClick={removeFromCart}
+              >
+                Remove from Cart
+              </button>
+            </p>
+          </div>
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
