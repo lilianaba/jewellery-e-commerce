@@ -62,7 +62,7 @@ const Banner = () => {
     autoplay: true,
     duration: 3000,
     transitionDuration: 500,
-    infinite: false,
+    infinite: true,
     indicators: true,
     onChange: (oldIndex, newIndex) => {
       console.log(`fade transition from ${oldIndex} to ${newIndex}`);
