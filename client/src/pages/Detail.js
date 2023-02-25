@@ -108,13 +108,8 @@ function Detail() {
           <div className="product-container my-1 product">
             <Link to="/">← Back to Products</Link>
 
-            <LazyLoadImage
-              className="product-pic"
-              src={`/images/${currentProduct.image}`}
-              alt={currentProduct.name}
-            />
-
             <h2>{currentProduct.name}</h2>
+
             <p>{currentProduct.description}</p>
             <p>Material: {currentProduct.material}</p>
             <p>Size: {currentProduct.size}</p>
@@ -131,6 +126,13 @@ function Detail() {
                 Remove from Cart
               </button>
             </p>
+          </div>
+          <div>
+            <img
+              src={`/images/${currentProduct.image}`}
+              alt={currentProduct.name}
+              className="product-img"
+            />
           </div>
         </div>
       ) : null}
