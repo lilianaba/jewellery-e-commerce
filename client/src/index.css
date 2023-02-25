@@ -287,8 +287,8 @@ input:focus {
 }
 
 #product-item-image {
-  width: 42%; 
-  margin: 4%; 
+  width: 42%;
+  margin: 4%;
 }
 
 .product-pic {
@@ -303,12 +303,12 @@ input:focus {
 }
 
 .product-container {
-  width: 60%; 
-  margin: 5%; 
+  width: 60%;
+  margin: 5%;
 }
 
 .product-container p {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   text-align: justify;
 }
 
@@ -325,13 +325,13 @@ input:focus {
   /* box-sizing: border-box; */
 }
 
-.contact-form h1{
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
- 
+.contact-form h1 {
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla",
+    sans-serif;
 }
 
 #send-button {
-  width: 100%; 
+  width: 100%;
 }
 /*
 .send-button input {
@@ -345,34 +345,40 @@ input:focus {
 .user-inf {
   /* margin-bottom: 1rem! important; */
   position: relative;
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla",
+    sans-serif;
 }
 
 .message-content {
   width: 100%;
   max-width: 100%;
-
 }
 
 .message-input {
   width: 100%;
   max-width: 100%;
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
- 
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla",
+    sans-serif;
 }
 
-.message-content textarea{
+.message-content textarea {
   min-height: 150px;
   font-size: 1.5rem;
   color: var(--gfont);
-
+  padding: 0.25rem;
+  border: 1px solid var(--gfont);
+  outline: none;
+  border-radius: 5px;
+  transition: box-shadow 0.2s;
+  width: 100%;
 }
 
-.user-inf input{
+.user-inf input {
   padding-bottom: 15px;
   margin-bottom: 10px;
   font-size: 1.5rem;
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla",
+    sans-serif;
 }
 
 .appDiv {
@@ -402,12 +408,12 @@ input:focus {
   }
 
   #product-item-image {
-    width: 92%; 
+    width: 92%;
   }
 
   .product-container {
-    width: 90%; 
-    margin: 5%; 
+    width: 90%;
+    margin: 5%;
   }
 
   .product-container p {
@@ -417,7 +423,7 @@ input:focus {
     padding-left: 10%;
     padding-right: 10%;
   }
-  .contact-form h1{
+  .contact-form h1 {
     width: 100%;
   }
 }
