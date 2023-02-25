@@ -307,7 +307,9 @@ input:focus {
   font-size: 1.50rem;
 }
 
-
+.hidden-toast {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .card {
