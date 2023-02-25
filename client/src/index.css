@@ -167,6 +167,7 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .space-between {
@@ -395,6 +396,9 @@ input:focus {
   }
   .contact-form h1{
     width: 100%;
+  }
+  .mx-1{
+    margin-left: 7px;
   }
 }
 
