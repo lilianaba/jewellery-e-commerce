@@ -126,7 +126,7 @@ THEN I am presented with a Stripe online payment page to input the credit card i
 
 ## Testing
 
-> APIs were tested using Insomnia: https://insomnia.rest/
+> APIs were malually tested
 
 > Application is tested by manual test scripts through the Chrome browser.
 
