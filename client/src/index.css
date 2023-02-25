@@ -280,6 +280,25 @@ input:focus {
   line-height: 1;
 }
 
+.product-pic {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  margin-right: 5%;
+}
+
+.product {
+  flex-basis: 35%;
+  margin-right: 7%;
+}
+
+.product-container {
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .card {
     width: 50%;
