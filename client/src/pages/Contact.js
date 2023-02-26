@@ -42,41 +42,19 @@ export default function Contact() {
     setHiddenState(false);
   };
 
-  // const handleChange = (e) => {
-  //   if (e.target.name === "email") {
-  //     const isValid = validateEmail(e.target.value);
-  //     if (!isValid) {
-  //       setErrorMessage("Your email is invalid.");
-  //     } else {
-  //       setErrorMessage("");
-  //     }
-  //   } else {
-  //     if (!e.target.value.length) {
-  //       setErrorMessage(`${e.target.name} is required.`);
-  //     } else {
-  //       setErrorMessage("");
-  //     }
-  //   }
-  //   if (!errorMessage) {
-  //     setFormState({ ...formState, [e.target.name]: e.target.value });
-  //     console.log("Handle Form", formState);
-  //   }
-  // };
-
   return (
     <form ref={form} onSubmit={sendEmail} className="contact-form">
-        <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
       <div className="user-inf">
-
-          <input
-            type="text"
-            value={user_name}
-            name="user_name"
-            className="name-input"
-            id="contact-name"
-            placeholder="name"
-            onChange={handleChange}
-          ></input>
+        <input
+          type="text"
+          value={user_name}
+          name="user_name"
+          className="name-input"
+          id="contact-name"
+          placeholder="name"
+          onChange={handleChange}
+        ></input>
 
         <input
           type="email"

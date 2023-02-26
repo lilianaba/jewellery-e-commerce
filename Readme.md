@@ -58,7 +58,24 @@ THEN I am presented with a Stripe online payment page to input the credit card i
 
 ## Screenshot
 
-![ScreenShot]
+![ScreenShot 1](./client/public/images/bella1.jpg)
+![ScreenShot 2](./client/public/images/bella2.jpg)
+![ScreenShot 3](./client/public/images/bella3.jpg)
+![ScreenShot 4](./client/public/images/bella4.jpg)
+![ScreenShot 5](./client/public/images/bella5.jpg)
+![ScreenShot 6](./client/public/images/bella6.jpg)
+![ScreenShot 7](./client/public/images/bella7.jpg)
+![ScreenShot 8](./client/public/images/bella8.jpg)
+![ScreenShot 9](./client/public/images/bella9.jpg)
+![ScreenShot 10](./client/public/images/bella10.jpg)
+![ScreenShot 11](./client/public/images/bella11.jpg)
+
+![ScreenShot 13](./client/public/images/bella13.jpg)
+![ScreenShot 14](./client/public/images/bella14.jpg)
+![ScreenShot 15](./client/public/images/bella15.jpg)
+![ScreenShot 16](./client/public/images/bella16.jpg)
+
+![Video](./client/public/images/Bellagio.webm)
 
 ## Installation
 
@@ -109,7 +126,7 @@ THEN I am presented with a Stripe online payment page to input the credit card i
 
 ## Testing
 
-> APIs were tested using Insomnia: https://insomnia.rest/
+> APIs were malually tested
 
 > Application is tested by manual test scripts through the Chrome browser.
 
