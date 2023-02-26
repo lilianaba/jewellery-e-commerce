@@ -11,7 +11,5 @@ li,
 ul {
   text-decoration: none;
   font-size: 20px;
-}
-li::marker {
-  color: var(--theme);
+  list-style-type: none;
 }
