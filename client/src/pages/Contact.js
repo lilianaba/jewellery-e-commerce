@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { validateEmail } from "../utils/helpers";
 
 export default function Contact() {
   const [formState, setFormState] = useState({
@@ -85,7 +84,7 @@ export default function Contact() {
         ></textarea>
       </div>
       <div className="send-button">
-        <input type="submit" value="send" id="send-email" />
+        <button type="submit" id="send-button">Send</button>
       </div>
       <div className={hiddenState ? "hidden-toast" : ""}>Sent</div>
     </form>

@@ -287,6 +287,11 @@ input:focus {
   line-height: 1;
 }
 
+#product-item-image {
+  width: 42%;
+  margin: 4%;
+}
+
 .product-pic {
   width: 100%;
   height: 90%;
@@ -295,17 +300,17 @@ input:focus {
 }
 
 .product {
-  flex-basis: 35%;
-  margin-right: 7%;
+  flex-basis: 60%;
 }
 
 .product-container {
-  margin-left: 10%;
-  margin-top: 100px;
+  width: 60%;
+  margin: 5%;
 }
 
 .product-container p {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
+  text-align: justify;
 }
 
 .hidden-toast {
@@ -321,52 +326,67 @@ input:focus {
   /* box-sizing: border-box; */
 }
 
-.contact-form h1{
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
- 
+.contact-form h1 {
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla",
+    sans-serif;
 }
-.send-button input{
+
+#send-button {
+  width: 100%;
+}
+/*
+.send-button input {
   background-color: var(--theme);
   color: var(--light);
   font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
   font-size: 1.5rem;
 }
+*/
 
 .user-inf {
   /* margin-bottom: 1rem! important; */
   position: relative;
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla",
+    sans-serif;
 }
 
 .message-content {
   width: 100%;
   max-width: 100%;
-
 }
 
 .message-input {
   width: 100%;
   max-width: 100%;
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
- 
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla",
+    sans-serif;
 }
-.message-content textarea{
 
+.message-content textarea {
   min-height: 150px;
   font-size: 1.5rem;
   color: var(--gfont);
-
+  padding: 0.25rem;
+  border: 1px solid var(--gfont);
+  outline: none;
+  border-radius: 5px;
+  transition: box-shadow 0.2s;
+  width: 100%;
 }
-.user-inf input{
+
+.user-inf input {
   padding-bottom: 15px;
   margin-bottom: 10px;
   font-size: 1.5rem;
-  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla", sans-serif;
+  font-family: "Gabriola", sans-serif, "Brandon Grotesque Light", "Karla",
+    sans-serif;
 }
 
-
-
-
+.appDiv {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (max-width: 768px) {
   .card {
@@ -387,6 +407,16 @@ input:focus {
   .flex {
     flex-direction: column;
   }
+
+  #product-item-image {
+    width: 92%;
+  }
+
+  .product-container {
+    width: 90%;
+    margin: 5%;
+  }
+
   .product-container p {
     font-size: 1.25rem;
   }
@@ -394,16 +424,10 @@ input:focus {
     padding-left: 10%;
     padding-right: 10%;
   }
-  .contact-form h1{
+  .contact-form h1 {
     width: 100%;
   }
   .mx-1{
     margin-left: 7px;
   }
-}
-
-.appDiv {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }

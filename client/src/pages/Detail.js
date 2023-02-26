@@ -105,8 +105,8 @@ function Detail() {
     <>
       {currentProduct && cart ? (
         <div className="flex">
-          <div>
-            <img
+          <div id="product-item-image">
+            <LazyLoadImage
               src={`/images/${currentProduct.image}`}
               alt={currentProduct.name}
               className="product-img"
@@ -114,9 +114,7 @@ function Detail() {
           </div>
           <div className="product-container my-1 product">
             <Link to="/">← Back to Products</Link>
-
             <h2>{currentProduct.name}</h2>
-
             <p>{currentProduct.description}</p>
             <p>Material: {currentProduct.material}</p>
             <p>Size: {currentProduct.size}</p>

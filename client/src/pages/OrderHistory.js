@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_USER } from "../utils/queries";
 import { UPDATE_USER } from "../utils/mutations";
 import Autocomplete from "react-google-autocomplete";
+import { LazyLoadImage } from "react-lazy-load-image-component"; 
 
 function OrderHistory() {
   const [formState, setFormState] = useState({ address: "", phone: "" });
@@ -22,7 +22,6 @@ function OrderHistory() {
 
   useEffect(() => {
     if (data) {
-      // const newformState = { address: user.address, phone: user.phone}
       setFormState({ ...formState, address: user.address, phone: user.phone });
     }
   }, [data]);
@@ -135,7 +134,7 @@ function OrderHistory() {
                       <div key={index} className="flex-row" id="order-item">
                         <div id="order-item-image">
                           <Link to={`/products/${_id}`}>
-                            <img
+                            <LazyLoadImage
                               alt={product.name}
                               src={`/images/${product.image}`}
                             />
