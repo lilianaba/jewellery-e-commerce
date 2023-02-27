@@ -5,12 +5,13 @@
 ## Table of Contents
 
 - [Description](#description)
+- [Live URL](#live-url)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Screenshot](#screenshot)
 - [Installation](#installation)
+- [Video](#video)
 - [Features](#features)
-- [Live URL](#live-url)
 - [Contributors](#contributors)
 - [Testing](#testing)
 - [Questions](#questions)
@@ -19,6 +20,10 @@
 ## Description
 
 The Jewellery-e-Commerce online platform has been designed in the context of a scalable, user-focused MERN stack single-page application. It works with real-world data to solve a real-world challenge, with a focus on data and user demand.
+
+## Live URL
+
+https://quiet-caverns-07213.herokuapp.com/
 
 ## User Story
 
@@ -75,7 +80,9 @@ THEN I am presented with a Stripe online payment page to input the credit card i
 ![ScreenShot 15](./client/public/images/bella15.jpg)
 ![ScreenShot 16](./client/public/images/bella16.jpg)
 
-![Video](./client/public/images/Bellagio.webm)
+## Video
+
+Video Demonstration Link: [Video](./client/public/images/Bellagio.webm)
 
 ## Installation
 
@@ -106,7 +113,6 @@ THEN I am presented with a Stripe online payment page to input the credit card i
 - Protects sensitive API key information on the server.
 - Meets good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments).
 
-## Live URL
 
 ## Future Development
 
