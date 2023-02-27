@@ -9,6 +9,7 @@
 - [Acceptance Criteria](#acceptance-criteria)
 - [Screenshot](#screenshot)
 - [Installation](#installation)
+- [Video](#video)
 - [Features](#features)
 - [Live URL](#live-url)
 - [Contributors](#contributors)
@@ -75,7 +76,9 @@ THEN I am presented with a Stripe online payment page to input the credit card i
 ![ScreenShot 15](./client/public/images/bella15.jpg)
 ![ScreenShot 16](./client/public/images/bella16.jpg)
 
-![Video](./client/public/images/Bellagio.webm)
+## Video
+
+Video Demonstration Link: [Video](./client/public/images/Bellagio.webm)
 
 ## Installation
 
@@ -107,6 +110,8 @@ THEN I am presented with a Stripe online payment page to input the credit card i
 - Meets good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments).
 
 ## Live URL
+
+https://quiet-caverns-07213.herokuapp.com/
 
 ## Future Development
 
